@@ -1,0 +1,40 @@
+h1 {
+    color: #00235b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 250px;
+}
+h2 {
+    color: #00235b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200px;
+}
+li{
+    margin: 0 10px;
+    padding: 10px;
+}
+li:hover{
+    background-color: rgba(186, 185, 185, 0.499);
+}
+.navegacion{
+    justify-content: center;
+    margin: 0 10px;
+}
+.botonera {
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    list-style: none;
+}.header {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+.logo img{/* .logo img es para poder cambir el tamaño del logo */
+    width: 300px;
+    height: auto;
+}
+
+.logo {
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+<svg width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Texto principal -->
+  <text x="20" y="60" font-family="Montserrat, Arial, sans-serif" font-size="42" font-weight="bold" fill="#2E8B57">
+    Green Gains
+  </text>
+
+  <!-- Subtítulo -->
+  <text x="22" y="90" font-family="Roboto, Arial, sans-serif" font-size="18" fill="#333333">
+    Diario Digital
+  </text>
+</svg>

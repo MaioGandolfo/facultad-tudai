@@ -1,0 +1,135 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00235b;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+}
+li{
+    margin: 0 10px;
+    padding: 10px;
+}
+li:hover{
+    background-color: rgba(186, 185, 185, 0.499);
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    align-items: center;
+}
+.botonera {
+    padding: 0 5px;
+    display: flex;
+    margin: 0 8px;
+    justify-content: center;
+    list-style: none;
+}
+.divPrincipal {
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    margin: 10px;
+    width: auto;
+
+}
+.noticiaImpor{
+    background-color: green;
+    text-align: center;
+    margin: 20px;
+}
+.noticiaPoliti {
+    background-color: rgb(125, 125, 125);
+    margin: 20px;
+    text-align: center;
+}
+.noticiaDepor {
+    background-color: blue;
+    margin: 20px;
+    text-align: center;
+}
+
+.imgPol img{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 2px;
+}
+.imgDepor img {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 2px;
+}
+.botonDepor{
+    background-color: #00235b;
+    color: white;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00235b;
+    font-size: 21px;
+    font-weight: 800;
+    text-align: left;
+}
+
+h3 {
+    font-size: 15px;
+}
+h4 {
+    font-size: 12px;
+}
+.logo img{/* .logo img es para poder cambir el tamaño del logo */
+    width: 300px;       
+    height: auto;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.importante {
+    color:black;
+    font-size: 18px;
+    text-align: left;
+}
+.politica {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+}
+.resumenPolitica{
+    color:#000000;
+    font-size: 15px;
+    text-align: left;
+}
+.deporte {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+}
+.resumenDeporte{
+    color:#000000;
+    font-size: 15px;
+    text-align: left;
+}
+.footerMain {
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+    width: auto;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
