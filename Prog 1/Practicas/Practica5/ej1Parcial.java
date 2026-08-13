@@ -1,0 +1,77 @@
+package Practica5;
+
+public class ej1Parcial{
+	/*
+	encontrar el inicio y fin de cada sec, recorres las sec y en cada sec hay valores 	repetidos, 
+	si por ej hay 67,67,67,67 tengo que hacer un corrimiento a la izq 
+	y agregar la cantidad de elementos que hay en la sec pero negado ej -8 y al lado de la cantidad 	de elementos pongo el el elemento, en este caso queda -8, 67
+	*/
+
+	final static int SEPA=0;
+
+	public static void main (String[] args){
+	
+
+		int [] arr={0,44,44,44,44,0,23,0,33,33,33,33,33,0,5,5,0,4,19,0};
+
+		int inicio=0, fin=-1;
+
+		while (inicio<arr.length){
+			inicio=buscarIni(arr, fin+1);
+			if (inicio<arr.length){
+				fin=buscarFin(arr, inicio);
+				boolean Eiguales=elementosIguales(arr, inicio, fin);
+				if (Eiguales){
+					procesarSec(arr, inicio, fin);
+					fin=inicio;
+				}
+				
+			}//if
+	
+		}//while
+		mostrarArreglo(arr);
+			
+	}//main
+	public static void procesarSec (int[] arr,int ini,int fin){
+		int contador=0, elemento=arr[ini];
+		while (fin>=ini){
+			cIzq(arr, fin);
+			fin--;
+			contador++;
+		}
+		arr[ini]=(-contador);
+		arr[ini + 1]=elemento;
+	}//Ps
+	public static boolean elementosIguales(int [] arr, int ini, int fin){
+		int min=2, contador=0;
+		while (ini<=fin && arr[ini]==arr[ini+1]){
+			ini++;
+			contador++;
+		}
+		if (contador >=min)
+			return true;
+		else 
+			return false;
+	}//eI
+	public static void cIzq (int [] arr, int pos){
+		for (int i=pos; i<arr.length; i++){
+			arr[i]=arr[i+1];
+		}
+	}//cIzq
+	public static int buscarIni (int [] arr, int i){
+		while (i<arr.length && arr[i]==SEPA)
+			i++;
+		return i;
+	}//bIni
+	public static int buscarFin (int [] arr, int i){
+		while (i<arr.length && arr[i]!=SEPA)
+			i++;
+		return i-1;
+	}
+	public static void mostrarArreglo(int[] arr){
+		for (int i=0; i<arr.length; i++){
+			System.out.print(arr[i] + "|");
+		}
+		System.out.println(" ");	
+	}
+}//class

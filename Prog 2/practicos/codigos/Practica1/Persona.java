@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class Persona {
     int dni;
     LocalDate fNac;
-    String sexo="Femenino";
+    String sexo;
     String nombre;
     String apellido;
     int edad;
@@ -31,7 +31,7 @@ public class Persona {
     }
     public Persona(int dni, String nombre, String apellido){
         this.dni=dni;
-        fNac=LocalDate.of(2000, 1, 1);// para fechas
+        fNac=LocalDate.of(2000, 10, 1);// para fechas
         sexo="Femenino";
         this.nombre=nombre;
         this.apellido=apellido;
