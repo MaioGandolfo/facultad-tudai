@@ -11,8 +11,14 @@ public class Serie {
         setDescripcion(null);
         setCreador(null);
         setGenero(null);
+    }
 
-
+    public int vistosTotal(){
+        int totalVisto=0;
+        for(int i=0; i<temporada.length; i++){
+            totalVisto +=temporada[i].capVistos();
+        }
+         return totalVisto;
     }
 
     public void setNombre(String nombre) {
