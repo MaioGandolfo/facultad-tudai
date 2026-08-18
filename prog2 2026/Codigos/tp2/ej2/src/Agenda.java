@@ -1,3 +1,15 @@
 public class Agenda {
     private Reunion [] reunion;
+
+
+    public Agenda (Reunion rr){
+        for (int i=0; i<reunion.length; i++) {
+            if (rr.getFecha() == reunion[i].getFecha() ^ cruzanHorario(rr, reunion[i]))
+                reunion[i] = rr;
+        }
+    }
+
+    public boolean cruzanHorario(Reunion r1, Reunion r2){
+        return (r1.getHoraInicio() != r2.getHoraInicio() && r1.getHoraFinalizacion() != r2.getHoraFinalizacion());
+    }
 }
