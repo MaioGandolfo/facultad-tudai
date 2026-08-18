@@ -64,12 +64,11 @@ public class Serie {
         }
     }
 
-    /*
-    public void agregarTemporada(Temporada tt, int cantTemporada) {
+
+    public void agregarTemporada(int cantTemporada) {
         for (int i=0; i<cantTemporada; i++)
             temporada[i] = new Temporada();
     }
-    */
 
     public String getDescripcion() {
         return descripcion;

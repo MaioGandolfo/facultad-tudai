@@ -13,11 +13,10 @@ public class Temporada {
         }
     }
 
-    /*
     public Temporada(){
         capitulos [2] = new Capitulo();
     }
-    */
+
 
     public void agregarCapitulos(Capitulo cc){
         for (int i=0; i<getCantCapitulos(); i++)
