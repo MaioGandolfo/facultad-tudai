@@ -1,12 +1,18 @@
 public class Capitulo {
     private String nombre;
     private String descripcion;
-    private int calificacion;
+    private double calificacion;
 
     public Capitulo (){
         setNombre(null);
         setCalificacion(-1);
         setDescripcion(null);
+    }
+
+    public Capitulo(String nombre, String descripcion){
+        setNombre(nombre);
+        setCalificacion(-1);
+        setDescripcion(descripcion);
     }
 
     public String getNombre() {
@@ -35,7 +41,7 @@ public class Capitulo {
         return getCalificacion() >=0;
     }
 
-    public int getCalificacion() {
+    public double getCalificacion() {
         return calificacion;
     }
 
@@ -48,8 +54,8 @@ public class Capitulo {
         }
     }
 
-    public void setCalificacion(int calificacion) {
-            this.calificacion = calificacion;
+    public void setCalificacion(double calificacion) {
+        this.calificacion = calificacion;
     }
 
 

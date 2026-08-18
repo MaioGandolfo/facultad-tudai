@@ -13,12 +13,34 @@ public class Serie {
         setGenero(null);
     }
 
+    public Serie(String nombre, String descripcion, String creador, String genero){
+        setNombre(nombre);
+        setDescripcion(descripcion);
+        setCreador(creador);
+        setGenero(genero);
+    }
+
+
     public int vistosTotal(){
         int totalVisto=0;
-        for(int i=0; i<temporada.length; i++){
+        for(int i=0; i<temporada.length; i++)
             totalVisto +=temporada[i].capVistos();
-        }
          return totalVisto;
+    }
+
+    public int vistosTemporada(int tt){
+        return temporada[tt].capVistos();
+    }
+
+    public double promedioTemp(int tt){
+        return temporada[tt].promedioCalifCap();
+    }
+
+    public double promedioTemp(){
+        double promedio=0;
+        for (int i=0; i<temporada.length; i++)
+            promedio += temporada[i].promedioCalifCap();
+        return promedio / temporada.length;
     }
 
     public void setNombre(String nombre) {
@@ -32,10 +54,22 @@ public class Serie {
         return temporada.length;
     }
 
-    public void agrearTemporada(int nTemporada) {
-        for (int i=0; i<nTemporada; i++)
+    public void agregarTemporada(Temporada tt) {
+        // 1. Instanciamos el arreglo de temporadas de la serie
+        this.temporada = new Temporada[tt.getCantCapitulos()];
+
+        // 2. Instanciamos cada temporada (suponiendo 2 capítulos por temporada como ejemplo)
+        for (int i = 0; i < tt.getCantCapitulos(); i++) {
+            this.temporada[i] = new Temporada(2); // 2 capítulos por temporada
+        }
+    }
+
+    /*
+    public void agregarTemporada(Temporada tt, int cantTemporada) {
+        for (int i=0; i<cantTemporada; i++)
             temporada[i] = new Temporada();
     }
+    */
 
     public String getDescripcion() {
         return descripcion;

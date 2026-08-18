@@ -8,7 +8,7 @@ public class Rectangulo2 {
         p1.setY(0);
         base=0;
         altura=0;
-    }
+    } 
 
     public Rectangulo2 (PuntoGeometrico p1){
         this.p1.setX(p1.getX());
