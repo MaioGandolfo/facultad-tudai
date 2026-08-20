@@ -1,9 +1,14 @@
-public class Provincia {
-    private Ciudad [] ciudades;
-    private double totalRecaudado;
+import java.util.ArrayList;
 
-    public Provincia (int cantCiudades){
-        this.ciudades = new Ciudad[cantCiudades];
+public class Provincia {
+    private ArrayList <Ciudad> ciudades;
+    private double totalRecaudado;
+    private String nombre;
+    private int cantCiudadesDeficit;
+
+    public Provincia (String nn){
+        setNombre(nn);
+        this.ciudades = new ArrayList<>();
     }
 
     public void setTotalRecaudado(double totalRecaudado){
@@ -13,26 +18,39 @@ public class Provincia {
             this.totalRecaudado=1;
     }
 
+    public boolean provinciaDeficit(){
+        return this.cantCiudadesDeficit > (ciudades.size()/2);
+    }
+
     public double getTotalRecaudado(){
         return totalRecaudado;
     }
 
-    public Ciudad [] getCiudadesGrandes(int cantHab){
-        Ciudad ciudadTemp []= new  Ciudad[ciudades.length];
-        int cantCiudades100k=0;
-
-        for(int i=0; i<ciudades.length; i++){
-            if(ciudades[i].getCantHabitantes() > cantHab) {
-                ciudadTemp[i] = ciudades[i];
-                cantCiudades100k++;
+    public int setCiudadesDeficit(int masQue){
+        for(int i=0; i<ciudades.size(); i++){
+            if(ciudades.get(i).getCantHabitantes()> masQue) {
+                if (ciudades.get(i).estaDeficit())
+                    cantCiudadesDeficit++;
             }
         }
-        Ciudad ciudades100k [] = new Ciudad[cantCiudades100k];
-
-        for(int i=0; i<cantCiudades100k; i++)
-            ciudades100k[i] = ciudadTemp[i];
-
-        return ciudades100k;
+        return cantCiudadesDeficit;
     }
 
+
+    public boolean equals (Object o1){
+            Provincia aux = (Provincia) o1;
+        try {
+                return aux.getNombre().equals(this.getNombre());
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }
