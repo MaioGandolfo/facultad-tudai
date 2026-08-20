@@ -23,6 +23,19 @@ public class Reunion {
         }
     }
 
+    public String datosReunion(){
+        return "fecha: " + getFecha() + '\n' + "hora inicio: " + getHoraInicio() +'\n' + "hora finalizacion: " + getHoraFinalizacion();
+    }
+
+    public void datosParticipantes(){
+        for(int i=0; i<participantes.length; i++) {
+            if (participantes[i] != null)
+                participantes[i].datosCompletos();
+            else
+                System.out.println("no hay participante");
+        }
+    }
+
     public LocalDate getFecha() {
         return fecha;
     }

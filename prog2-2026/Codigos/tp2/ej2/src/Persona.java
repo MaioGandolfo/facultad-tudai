@@ -21,6 +21,11 @@ public class Persona {
             this.nombre = "no hay nombre";
     }
 
+    public String datosCompletos(){
+        return "nombre: " + getNombre() + '\n' + "mail: " + '\n' + "telefono: " + getTelefono();
+    }
+
+
     public String getMail() {
         return mail;
     }

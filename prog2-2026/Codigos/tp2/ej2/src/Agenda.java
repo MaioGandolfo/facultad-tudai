@@ -11,10 +11,12 @@ public class Agenda {
                 reunion[i] = rr;
                 break;
             }
-            else if ((rr.getFecha() == reunion[i].getFecha()) && (cruzanHorario(rr, reunion[i]))) {
+            else if ((rr.getFecha() == reunion[i].getFecha()) && !(cruzanHorario(rr, reunion[i]))) {
                 reunion[i] = rr;
                 break;
             }
+            else
+                break;
         }
     }
 
@@ -26,7 +28,9 @@ public class Agenda {
     }
 
     public void mostrarReuniones(){
-        for (int i=0; i<reunion.length; i++)
-            System.out.println(reunion[i] + "/");
+        for (int i=0; i<reunion.length; i++) {
+            if(reunion[i] != null)
+                System.out.println("reunion " + (i+1) + '\n' + reunion[i].datosReunion());
+        }
     }
 }
