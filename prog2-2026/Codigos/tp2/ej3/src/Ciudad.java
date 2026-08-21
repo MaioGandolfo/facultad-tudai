@@ -1,14 +1,23 @@
 import java.util.ArrayList;
 
 public class Ciudad {
+    private String nombre;
     private int cantHabitantes;
     private ArrayList<Impuesto> impuestos;
     private double gasto;
+    private double imp1;
+    private double imp2;
+    private double imp3;
+    private double imp4;
 
 
-    public Ciudad (int cantHabitantes, Impuesto imp, double gasto){
+    public Ciudad (String nombre, int cantHabitantes, double gasto, double imp1,  double imp2, double imp3, double imp4){
+        setNombre(nombre);
         setCantHabitantes(cantHabitantes);
-        agregarImpuesto(imp);
+        this.imp1 = imp1;
+        this.imp2 = imp2;
+        this.imp3 = imp3;
+        this.imp4 = imp4;
         setGasto(gasto);
     }
 
@@ -23,10 +32,7 @@ public class Ciudad {
 
 
     public double totalRecaudado(){
-        double recaudado=0;
-        for(int i=0; i<impuestos.size(); i++)
-            recaudado+= impuestos.get(i).getValor();
-        return recaudado;
+        return imp1 + imp2 + imp3 + imp4;
     }
 
 
@@ -52,4 +58,25 @@ public class Ciudad {
             this.cantHabitantes = 1;
     }
 
+    public String getNombre(){
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public boolean equals(Object o1){
+        Ciudad aux = (Ciudad) o1;
+        try {
+            return aux.getNombre().equals(this.getNombre());
+        }catch (Exception e) {
+            return false;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "ciudad: " + nombre + '\n' + "cantidad de habitantes: " + cantHabitantes + '\n' + "estoy deficit: " + this.estaDeficit() + '\n' + "-----------" + '\n';
+    }
 }

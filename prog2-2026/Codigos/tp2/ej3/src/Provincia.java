@@ -18,7 +18,7 @@ public class Provincia {
             this.totalRecaudado=1;
     }
 
-    public boolean provinciaDeficit(){
+    public boolean estoyDeficit(){
         return this.cantCiudadesDeficit > (ciudades.size()/2);
     }
 
@@ -26,14 +26,21 @@ public class Provincia {
         return totalRecaudado;
     }
 
-    public int setCiudadesDeficit(int masQue){
+    public void agregarCiudad(Ciudad c1){
+        if(!ciudades.contains(c1))
+            ciudades.add(c1);
+    }
+
+    public ArrayList<Ciudad> ciudadesDeficit(int minimosHabitantes){
+        ArrayList <Ciudad> aux = new ArrayList<>();
         for(int i=0; i<ciudades.size(); i++){
-            if(ciudades.get(i).getCantHabitantes()> masQue) {
+            if(ciudades.get(i).getCantHabitantes()> minimosHabitantes) {
                 if (ciudades.get(i).estaDeficit())
-                    cantCiudadesDeficit++;
+                    aux.add(ciudades.get(i));
             }
         }
-        return cantCiudadesDeficit;
+        cantCiudadesDeficit=aux.size();
+        return aux;
     }
 
 
@@ -52,5 +59,9 @@ public class Provincia {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String toString() {
+        return "Provincia{" + "nombre=" + nombre + '}';
     }
 }
