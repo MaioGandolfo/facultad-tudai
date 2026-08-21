@@ -23,7 +23,6 @@ public class Empleado {
         }
     }
 
-    @Override
     public boolean equals (Object o){
         try {
             Persona pp = (Persona) o;

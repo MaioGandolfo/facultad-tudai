@@ -7,9 +7,9 @@ public class Encuesta {
     }
 
     /*
-    * metodo responder encuesta
-    * que tome el empleado que la hizo y la persona que respondio
-    * */
+     * metodo responder encuesta
+     * que tome el empleado que la hizo y la persona que respondio
+     * */
 
     public int getNumPreguntas() {
         return numPreguntas;
@@ -35,5 +35,4 @@ public class Encuesta {
 
 
     }
-
 }
