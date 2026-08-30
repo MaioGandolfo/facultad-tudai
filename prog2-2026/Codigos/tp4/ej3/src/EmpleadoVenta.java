@@ -11,7 +11,7 @@ public class EmpleadoVenta extends Empleado{
     }
 
     public String toString(){
-        return super.toString() + '\n' + "porcentaje de ventas: " + porcentajeVenta + '\n' + "ventas totales: " + ventas.size();
+        return super.toString() + '\n' + "porcentaje de ventas: " + porcentajeVenta + "%" +'\n' + "ventas totales: " + ventas.size();
     }
 
     public int pagoTotal(){

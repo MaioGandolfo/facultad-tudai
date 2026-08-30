@@ -72,16 +72,27 @@ public class Integrante {
     }
 
     public void setEstado(String estado){
-        if(estado.equalsIgnoreCase("Viajando") || estado.equalsIgnoreCase("En concentración")
-                || estado.equalsIgnoreCase("En país de origien"))
+        if((estado != null )&& (estado.equalsIgnoreCase("Viajando") || estado.equalsIgnoreCase("En concentración")
+                || estado.equalsIgnoreCase("En país de origen")))
             this.estado = estado;
         else
             this.estado = "no disponible";
     }
 
-    public String getEstado(){
+    private String getEstado(){
         return estado;
     }
+
+    public boolean esCombocable(){
+        return getEstado().equalsIgnoreCase("En país de origen");
+    }
+
+    public String toString(){
+        return "---------------------------" + '\n' +
+                "nombre: " + nombre + '\n' + "apellido: " + apellido + '\n' + "numero de pasaporte: " + numeroPasaporte + '\n' +
+                "fecha de nacimiento: " + fNac + '\n' + "estado: " + estado;
+    }
+
 
 
 }

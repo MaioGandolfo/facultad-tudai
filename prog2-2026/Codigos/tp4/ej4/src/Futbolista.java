@@ -44,4 +44,8 @@ public class Futbolista extends Integrante{
     public int getCantGoles() {
         return cantGoles;
     }
+
+    public String toString(){
+        return super.toString() + '\n' + "posición: " + posicion + '\n' + "píe habil: " + pieHabil + '\n' + "cantidad de goles: " + cantGoles;
+    }
 }

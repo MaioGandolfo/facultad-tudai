@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90f86c71-89d7-4c13-b85b-ee186df6c549" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../tp4/ej4/src/DirectorTecnico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tp4/ej4/src/Masajista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ej4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/ej4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Futbolista.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/src/Futbolista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Integrante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/src/Integrante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeleccionFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/src/SeleccionFutbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tp4/ej3/src/EmpleadoVenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej3/src/EmpleadoVenta.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MaioGandolfo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MaioGandolfo/facultad-tudai.git",
+    "accountId": "67dc520a-e9b0-47d1-b911-76c53981fd61"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="6.425391298099359E-25" />
+      <entry key="MS500" value="2.4979666291037547E-5" />
+      <entry key="S2" value="0.1189223179320996" />
+      <entry key="S5" value="0.68175068610239" />
+      <entry key="S10" value="1.4365826517111793" />
+      <entry key="S30" value="3.725923677371329" />
+      <entry key="S60" value="5.743958815803478" />
+      <entry key="M2" value="7.461765178814595" />
+      <entry key="M5" value="8.861942303901024" />
+      <entry key="M10" value="9.408043530148955" />
+      <entry key="M15" value="9.600065970588721" />
+      <entry key="M30" value="9.79733252087535" />
+      <entry key="H1" value="9.89969378060807" />
+      <entry key="H2" value="10.4982414224145" />
+      <entry key="H4" value="19.851409114033167" />
+      <entry key="D1" value="119.90806209185686" />
+      <entry key="W1" value="176.15218855196412" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000995784678006" />
+      <entry key="S2" value="1.1278754204930777" />
+      <entry key="S5" value="1.743856288222879" />
+      <entry key="S10" value="2.79238451262283" />
+      <entry key="S30" value="5.571283362553812" />
+      <entry key="S60" value="7.477555195344881" />
+      <entry key="M2" value="8.949334183837859" />
+      <entry key="M5" value="10.093904265747254" />
+      <entry key="M10" value="10.530978613212316" />
+      <entry key="M15" value="10.683632788265202" />
+      <entry key="M30" value="10.839937736768997" />
+      <entry key="H1" value="10.920740756173526" />
+      <entry key="H2" value="11.360615704967591" />
+      <entry key="H4" value="18.191315583121465" />
+      <entry key="D1" value="91.26647738850389" />
+      <entry key="W1" value="132.3463953956856" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.001449730049442431" />
+      <entry key="MS500" value="0.27060222362962694" />
+      <entry key="S2" value="0.9132016039293953" />
+      <entry key="S5" value="2.125759116992959" />
+      <entry key="S10" value="3.942396806746282" />
+      <entry key="S30" value="9.063399314662748" />
+      <entry key="S60" value="13.046362555298833" />
+      <entry key="M2" value="16.29892796862036" />
+      <entry key="M5" value="18.90295311768681" />
+      <entry key="M10" value="19.911007595865403" />
+      <entry key="M15" value="20.26465454926263" />
+      <entry key="M30" value="20.627559114677023" />
+      <entry key="H1" value="20.815530187424" />
+      <entry key="H2" value="21.856307278611723" />
+      <entry key="H4" value="38.04071885199389" />
+      <entry key="D1" value="211.1729043499716" />
+      <entry key="W1" value="308.49824593372665" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3IbkOA9vFO3CC15SX91zVG1Gl3I" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/maio/Documentos/facultad-tudai/prog2-2026/Codigos/tp3/ej4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../tp4" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <setting name="addClasspath" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90f86c71-89d7-4c13-b85b-ee186df6c549" name="Changes" comment="" />
+      <created>1788040623876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788040623876</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
