@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90f86c71-89d7-4c13-b85b-ee186df6c549" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../tp4/ej4/src/DirectorTecnico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tp4/ej4/src/Masajista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ej4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/ej4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Futbolista.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/src/Futbolista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Integrante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/src/Integrante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SeleccionFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej4/src/SeleccionFutbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tp4/ej3/src/EmpleadoVenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tp4/ej3/src/EmpleadoVenta.java" afterDir="false" />
-    </list>
+    <list default="true" id="90f86c71-89d7-4c13-b85b-ee186df6c549" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
