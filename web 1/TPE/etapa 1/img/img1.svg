@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="100%" height="100%">
+    <defs>
+        <style>
+            .titulo {
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
+                font-size: 42px;
+                fill: #00000;
+                text-anchor: middle;
+            }
+            .subtitulo {
+                font-family: 'Arial', sans-serif;
+                font-size: 24px;
+                fill: rgba(48, 50, 50, 0.4);
+                letter-spacing: 2px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <!-- Texto Principal -->
+    <text x="200" y="80" class="titulo">Pequeños Amigos</text>
+    
+    <!-- Subtexto (ahora más arriba) -->
+    <text x="200" y="110" class="subtitulo">Veterinaria</text>
+</svg>
