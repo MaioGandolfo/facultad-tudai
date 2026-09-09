@@ -40,17 +40,19 @@ public class PilaElementos {
         return size;
     }
 
-    public Object[] copy(){
-        Object [] aux = new Object[pila.size()];
+    public PilaElementos copy(){
+        PilaElementos aux = new PilaElementos();
         for(int i=0; i< pila.size(); i++)
-            aux[i] = pila.get(i);
+            aux.push(pila.get(i));
 
         return aux;
     }
 
-    public Object[] reverse(){
-        Object [] aux = copy();
-        for(int i=0; i< pila.size() /2; i++)
+    public PilaElementos reverse(){
+        PilaElementos aux = new PilaElementos();
+        for(int i = pila.size()-1 ; i>=0 ; i--)
+            aux.push(pila.get(i));
+        return  aux;
     }
 
 
