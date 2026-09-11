@@ -14,7 +14,37 @@ public class Casa {
         cualidadesAceptadas = new ArrayList<>();
     }
 
+    public void addAlumno(Alumno aa){
+        if(!alumnos.isEmpty()) {
+            if (!aa.getAsignado()) {
+                int i = 0;
+                boolean cumple = false;
+                while ((i < cualidadesAceptadas.size() && !cumple) && alumnos.size() < cantAlumnosMax) {
+                    if (aa.cumpleCualidad(cualidadesAceptadas.get(i)))
+                        i++;
+                    else
+                        cumple = true;
+                }
 
+                if (i == cualidadesAceptadas.size()) {
+                    alumnos.add(aa);
+                    aa.setCasaAsignada(this.getNombre());
+                    aa.setAsignado(true);
+                }
+            }
+        }
+        else
+            alumnos.add(aa);
+    }
+
+    public boolean equals(Object o1){
+        Casa aux = (Casa) o1;
+        try{
+            return aux.getNombre().equalsIgnoreCase(this.getNombre());
+        } catch (Exception e) {
+            return false;
+        }
+    }
 
 
     public void addCualidades(String cualidad){
@@ -42,5 +72,15 @@ public class Casa {
 
     public int getCantAlumnosMax() {
         return cantAlumnosMax;
+    }
+
+    public void imprimirCasa(){
+        System.out.println("nombre: " + getNombre() +'\n');
+        imprimirLista();
+    }
+
+    public void imprimirLista(){
+        for(Alumno aa : alumnos)
+            System.out.println(aa.toString());
     }
 }
