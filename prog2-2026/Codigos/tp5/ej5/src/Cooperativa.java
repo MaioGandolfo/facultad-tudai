@@ -14,6 +14,10 @@ public class Cooperativa {
         lotesComunes = new ArrayList<>();
     }
 
+    public boolean platarCerealLote(Cereal cc, Lote ll){
+        return cc.plantarEnLote(Lote ll);
+
+    }
 
 
 
