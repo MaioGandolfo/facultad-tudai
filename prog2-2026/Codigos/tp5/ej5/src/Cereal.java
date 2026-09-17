@@ -9,9 +9,10 @@ public class Cereal {
         mineralesCereal = new ArrayList<>();
     }
 
-    public boolean cumpleCondicion(Lote ll ,int pos ){
+    public boolean cumpleCondicion(Lote ll, int pos ){
         return mineralesCereal.contains(ll.mineralesLote.get(pos));
     }
+
 
     public void setNombre(String nombre){
         if(nombre != null)

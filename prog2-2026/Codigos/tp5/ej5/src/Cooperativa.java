@@ -14,16 +14,10 @@ public class Cooperativa {
         lotesComunes = new ArrayList<>();
     }
 
-    public boolean platarCerealLote(Cereal cc, Lote ll){
-        return cc.plantarEnLote(Lote ll);
-
-    }
-
-
-
     public void addLote(Lote ll){
         lotes.add(ll);
     }
+
 
     public void setNombre(String nombre){
         String prederteminado = "Cooperativa ";

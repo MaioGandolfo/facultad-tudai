@@ -19,27 +19,18 @@ public class Lote {
         boolean corto = false;
         int i=0;
         while(i<mineralesLote.size() && !corto){
-            if(cc.cumpleCondicion(this, i) {
+            if(cc.cumpleCondicion(this , this.getHectareas())){
                 i++;
             }
             else{
                 corto = true;
             }
         }
-
-        if(corto == false)
-            cereales.add(cc);
+        return !corto;
     }
 
     public void addCereal(Cereal cc){
-        boolean corto= false;
-        for(int i=0 ; i< mineralesLote.size(); i++){
-            if(!cc.cumpleCondicion(this , i)) {
-                corto=true;
-                break;
-            }
-        }
-        if(corto = false)
+        if(plantarCereal(cc))
             cereales.add(cc);
     }
 
