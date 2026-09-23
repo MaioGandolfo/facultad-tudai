@@ -163,7 +163,7 @@ footer {
     background-color: #3cafaf;
     color:#ecf0f1;
     text-align: center;
-      position: center;
+    position:absolute;
       flex-direction: column;
       width: 100%;
       height: auto;
@@ -176,7 +176,7 @@ footer {
   }
   
 .wspLogo{
-  margin: 10;
+  margin: 10px;
   width: 50%;
   height: auto;
   justify-content: center;
@@ -195,7 +195,7 @@ footer {
 
 .footerLista{
     display:  flex;
-    width: 80%;
+    width: 100%;
     height: auto;
     justify-content: center;
     list-style: none;

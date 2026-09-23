@@ -4,6 +4,7 @@ public class Auto extends ObjetoAlquilable{
     private String marca;
     private int kilometros;
     private String patente;
+    private boolean estaAlquilado;
     private String tipoVehiculo;
 
     public Auto (String marca, int kilometros, String patente, String tipoVehiculo, LocalDate fechaVencimientoAlquiler){
@@ -12,6 +13,7 @@ public class Auto extends ObjetoAlquilable{
         setKilometros(kilometros);
         setPatente(patente);
         setTipoVehiculo(tipoVehiculo);
+        this.estaAlquilado = false;
     }
 
     public boolean equals(Object o){
@@ -29,10 +31,12 @@ public class Auto extends ObjetoAlquilable{
     }
 
     public boolean esAlquilable(){
-        return true;
+        return !estaAlquilado;
     }
 
-
+    public void alquilado(){
+        estaAlquilado = true;
+    }
 
 
     public String getMarca() {

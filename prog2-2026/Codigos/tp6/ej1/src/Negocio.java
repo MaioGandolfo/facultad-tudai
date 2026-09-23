@@ -17,6 +17,13 @@ public class Negocio {
             objetosAlquilables.add(oo);
     }
 
+    public void AlquileresPorVencer(int dias){
+        for(Persona pp : clientes){
+            if(pp.getObjetoAlquilado().estaPorVencer(dias))
+                pp.getObjetoAlquilado().toString();
+        }
+    }
+
     public void addCliente(Persona pp){
         if(!clientes.contains(pp))
             clientes.add(pp);

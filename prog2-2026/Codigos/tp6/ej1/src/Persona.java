@@ -15,6 +15,18 @@ public class Persona {
         historialAlquiler = new ArrayList<>();
     }
 
+    public void alquilarObjeto(ObjetoAlquilable oo){
+        if(oo.esAlquilable()) {
+            this.objetoAlquilado = oo;
+            oo.alquilado();
+            addHistorialAlquiler(oo);
+        }
+    }
+
+    public boolean alquilerPorVencer(int dias){
+        return objetoAlquilado.estaPorVencer(dias);
+    }
+
     public void setNombre(String nombre){
         if(nombre != null)
             this.nombre = nombre;
@@ -28,7 +40,12 @@ public class Persona {
 
     public void setObjetoAlquilado(ObjetoAlquilable oo){
         this.objetoAlquilado = oo;
+        oo.alquilado();
         addHistorialAlquiler(oo);
+    }
+
+    public ObjetoAlquilable getObjetoAlquilado(){
+        return objetoAlquilado;
     }
 
     private void addHistorialAlquiler(ObjetoAlquilable oo){

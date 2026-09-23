@@ -16,11 +16,13 @@ public abstract class ObjetoAlquilable {
         return fechaVencimientoAlquiler;
     }
 
-    public boolean estaPorVencer(int dias){
-        return (getFechaVencimientoAlquiler().getDayOfYear() - getFechaAlquiler().getDayOfYear()) >= dias;
+    protected boolean estaPorVencer(int dias){
+        return (getFechaVencimientoAlquiler().getDayOfYear() - getFechaAlquiler().getDayOfYear()) <= dias;
     }
 
     public abstract boolean esAlquilable();
+
+    public abstract void alquilado();
 
     public abstract boolean equals(Object o);
 
