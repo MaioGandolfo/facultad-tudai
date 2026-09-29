@@ -1,0 +1,46 @@
+#title-diario{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    height: 20%;
+    text-align: center;
+}
+
+#main{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#noticias{
+    justify-content: center;
+    display: inline;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    height: 10%;
+
+}
+
+h3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    height: 5%;
+}
+
+footer{
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    display: flex;
+    /*
+    align-items: center;
+    */
+}
+
+

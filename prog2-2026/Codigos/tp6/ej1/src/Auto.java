@@ -17,8 +17,9 @@ public class Auto extends ObjetoAlquilable{
     }
 
     public boolean equals(Object o){
-        Auto aux = (Auto) o;
+        //Auto aux = (Auto) o;
         try {
+            Auto aux = (Auto) o;
             return aux.getPatente().equalsIgnoreCase(this.getPatente());
         }
         catch (Exception e){
@@ -27,7 +28,8 @@ public class Auto extends ObjetoAlquilable{
     }
 
     public String toString(){
-        return  "Marca: " + marca + '\n' + "Kilometros: " + kilometros + '\n' + "Patente: " + patente + '\n' + "Tipo de Vehiculo: " + tipoVehiculo + '\n' + "-----------------------------";
+        return  "Marca: " + marca + '\n' + "Kilometros: " + kilometros + '\n' + "Patente: " + patente + '\n' + "Tipo de Vehiculo: " + tipoVehiculo + '\n' +
+                "fecha de vencimiento de alquiler: " + getFechaVencimientoAlquiler() + '\n' + "-----------------------------";
     }
 
     public boolean esAlquilable(){
@@ -77,9 +79,9 @@ public class Auto extends ObjetoAlquilable{
     }
 
     public void setTipoVehiculo(String tipoVehiculo) {
-        if(tipoVehiculo.equalsIgnoreCase("naftero") || tipoVehiculo.equalsIgnoreCase("electrico") || tipoVehiculo.equalsIgnoreCase("diesel"))
+        if(tipoVehiculo != null && (tipoVehiculo.equalsIgnoreCase("nafta") || tipoVehiculo.equalsIgnoreCase("electrico") || tipoVehiculo.equalsIgnoreCase("diesel")))
             this.tipoVehiculo = tipoVehiculo;
         else
-            this.tipoVehiculo = "naftero";
+            this.tipoVehiculo = "nafta";
     }
 }

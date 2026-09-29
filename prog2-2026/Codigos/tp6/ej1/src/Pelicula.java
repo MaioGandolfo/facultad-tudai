@@ -26,7 +26,8 @@ public class Pelicula extends ObjetoAlquilable{
     }
 
     public String toString() {
-        return "nombre" + nombre + '\n' + "info Filmografica: " + infoFilmografica + '\n' + "copias: " + copias + '\n' + "---------------------------------" ;
+        return "nombre: " + nombre + '\n' + "info Filmografica: " + infoFilmografica + '\n' + "copias: " + copias + '\n'+
+                "fecha de vencimiento de alquiler: " + getFechaVencimientoAlquiler() +'\n' + "---------------------------------" ;
     }
 
     public void alquilado(){

@@ -27,6 +27,12 @@ public class Persona {
         return objetoAlquilado.estaPorVencer(dias);
     }
 
+    public void historialAlquiler(){
+        for(ObjetoAlquilable oo : historialAlquiler){
+            System.out.println(oo.toString());
+        }
+    }
+
     public void setNombre(String nombre){
         if(nombre != null)
             this.nombre = nombre;

@@ -13,19 +13,24 @@ public class Negocio {
 
 
     public void addObjetoAlquilable(ObjetoAlquilable oo){
-        if(!objetosAlquilables.contains(oo))
+        if(!objetosAlquilables.contains(oo) || objetosAlquilables.isEmpty())
             objetosAlquilables.add(oo);
     }
 
     public void AlquileresPorVencer(int dias){
         for(Persona pp : clientes){
             if(pp.getObjetoAlquilado().estaPorVencer(dias))
-                pp.getObjetoAlquilado().toString();
+                System.out.println(pp.getObjetoAlquilado().toString());
+        }
+    }
+
+    public void historialAlquileres(){
+        for (Persona pp : clientes){
+            pp.historialAlquiler();
         }
     }
 
     public void addCliente(Persona pp){
-        if(!clientes.contains(pp))
             clientes.add(pp);
     }
 
