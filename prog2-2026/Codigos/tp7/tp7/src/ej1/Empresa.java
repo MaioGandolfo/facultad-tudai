@@ -16,6 +16,15 @@ public class Empresa {
             agroquimicos.add(aa);
     }
 
+    public ArrayList<Agroquimico> buscarAgroquimico(Condicion cc) {
+        ArrayList<Agroquimico> salida = new ArrayList<>();
+        for (Agroquimico aa : agroquimicos) {
+            if (cc.cumple(aa))
+                salida.add(aa);
+        }
+        return salida;
+    }
+
     public void setNombre(String nombre){
         if(nombre != null)
             this.nombre = nombre;

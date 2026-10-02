@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Agroquimico {
     private String nombre;
-    private ArrayList<Cultivo> cultivosAconsejados;
+    private ArrayList<Cultivo> cultivosNoAconsejados;
     private ArrayList<String> sintomasCompatibles;
 
     public Agroquimico(String nombre){
         setNombre(nombre);
-        this.cultivosAconsejados = new ArrayList<>();
+        this.cultivosNoAconsejados = new ArrayList<>();
         this.sintomasCompatibles = new ArrayList<>();
     }
 
@@ -18,19 +18,36 @@ public class Agroquimico {
             sintomasCompatibles.add(ss.toLowerCase());
     }
 
-    public void addCultivoAconsejado(String cultivo){
-        //if(!cultivosAconsejados.contains(cultivo))
-        //    cultivosAconsejados.add(cultivo.toLowerCase());
+    public void addCultivoNoAconsejado(Cultivo cc){
+        if(!cultivosNoAconsejados.contains(cc))
+            cultivosNoAconsejados.add(cc);
     }
 
     public boolean trataSintoma(String ss){
         return sintomasCompatibles.contains(ss.toLowerCase());
     }
 
-    public boolean tieneCultivo(String cultivo){
-        return cultivosAconsejados.contains(cultivo.toLowerCase());
+    public boolean tieneCultivo(Cultivo cc){
+        return cultivosNoAconsejados.contains(cc);
     }
 
+    public boolean trataEnfermedad(Enfermedad ee){
+        ArrayList<String> aux = ee.getSintomas();
+        for(String e : aux){
+            if(!this.trataSintoma(e))
+                return false;
+        }
+        return true;
+    }
+
+    public boolean equals(Object oo) {
+        try {
+            Agroquimico aux = (Agroquimico) oo;
+            return aux.getNombre().equalsIgnoreCase(this.getNombre());
+        } catch (Exception e) {
+            return false;
+        }
+    }
 
 
     public void setNombre(String nombre){
