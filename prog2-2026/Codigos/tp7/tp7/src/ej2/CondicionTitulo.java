@@ -9,6 +9,6 @@ public class CondicionTitulo extends Condicion{
 
 
     public boolean cumple(Documento dd) {
-        return dd.getTitulo().equalsIgnoreCase(titulo);
+        return dd.getTitulo().contains(titulo);
     }
 }

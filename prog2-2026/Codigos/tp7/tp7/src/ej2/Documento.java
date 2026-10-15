@@ -30,11 +30,15 @@ public class Documento {
 
     ////gets y sets
 
-    private String esValido(String ss){
+    public String esValido(String ss){
         if(ss != null)
             return ss;
         else
             return "--";
+    }
+
+    public String toString(){
+        return "titulo: " + titulo;
     }
 
     public void setTitulo(String nombre){

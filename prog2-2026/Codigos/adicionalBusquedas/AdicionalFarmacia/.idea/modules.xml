@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AdicionalFarmacia.iml" filepath="$PROJECT_DIR$/AdicionalFarmacia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tp8/tp8/ej1/ej1.iml" filepath="$PROJECT_DIR$/../../tp8/tp8/ej1/ej1.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../tp7/tp7/tp7.iml" filepath="$PROJECT_DIR$/../../tp7/tp7/tp7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tp8/tp8/tp8.iml" filepath="$PROJECT_DIR$/../../tp8/tp8/tp8.iml" />
     </modules>
   </component>
 </project>
