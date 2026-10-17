@@ -54,7 +54,7 @@ public class Planta {
         this.clase = clase;
     }
 
-    public boolean isInterior() {
+    public boolean getInterior() {
         return interior;
     }
 

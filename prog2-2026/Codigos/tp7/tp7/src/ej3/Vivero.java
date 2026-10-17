@@ -25,9 +25,6 @@ public class Vivero {
         return salida;
     }
 
-
-
-
     public void setNombre(String nombre){
         if(nombre != null)
             this.nombre = nombre;
