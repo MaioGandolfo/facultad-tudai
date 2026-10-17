@@ -103,6 +103,7 @@ nav a:hover, nav a:focus {
 }
 
 main {
+  align-items: center;
   padding: 1rem;
   max-width: 1200px;
   margin: 2rem auto;
@@ -174,26 +175,20 @@ a:hover {
 .ubicacion{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: auto;
   /*align-items: center;*/
   /*justify-content: center;*/
 }
 
-/*
-footer {
-  background-color: #3cafaf;
-  color: #ecf0f1;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+.ubicacion iframe {
+  display: block;
   width: 100%;
-  }
-  
-  */
-  
-  
-  
-  
-  /* lista del footer*/
+  aspect-ratio: 4 / 3;
+  border: 0;
+}
+
+
   .footer{
     background-color: #3cafaf;
     color:#ecf0f1;
@@ -204,31 +199,6 @@ footer {
       height: auto;
   }
 
-  /*
-
-  .fbLogo{
-    width: 100px;
-    height: auto;
-  }
-  
-.wspLogo{
-  margin: 10px;
-  width: 50%;
-  height: auto;
-  justify-content: center;
-}
-
-.xLogo{
-  width: 35%;
-  height: auto;
-}
-
-.ytLogo{
-  width: 35%;
-  height: auto;
-  padding: 0;
-}
-*/
 .footerLista {
   display: flex;
   justify-content: center; 
@@ -242,23 +212,6 @@ footer {
   padding: 0;
 }
 
-/*
-.footerLista{
-    display:  flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    list-style: none;
-}
-*/
-
-
-/*
-footer p {
-  margin: 0;
-  color: #ecf0f1;
-}
-  */
 
 @media screen and (min-width: 768px) {
   /* Menú fijo en pantallas grandes */
@@ -319,7 +272,7 @@ footer p {
 }
 
   section.right {
-    grid-column-start: 2
+    grid-column-start: 3
   }
 
   .footer{
