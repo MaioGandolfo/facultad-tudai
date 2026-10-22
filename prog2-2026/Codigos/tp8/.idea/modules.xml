@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/adicicalQuequen/adicicalQuequen.iml" filepath="$PROJECT_DIR$/adicicalQuequen/adicicalQuequen.iml" />
       <module fileurl="file://$PROJECT_DIR$/ej1/ej1.iml" filepath="$PROJECT_DIR$/ej1/ej1.iml" />
       <module fileurl="file://$PROJECT_DIR$/ej2/ej2.iml" filepath="$PROJECT_DIR$/ej2/ej2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tp8.iml" filepath="$PROJECT_DIR$/.idea/tp8.iml" />
