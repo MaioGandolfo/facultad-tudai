@@ -26,7 +26,7 @@ void main() {
 
     FlotaLimitada flotaLimitada1 = new FlotaLimitada(new CondicionModelo(2023));
     FlotaLimitada flotaLimitada2 = new FlotaLimitada(new CondicionCaracteristica("blanco"));
-    FlotaLimitada flotaLimitada3 =
+    //FlotaLimitada flotaLimitada3 =
 
 
 }
