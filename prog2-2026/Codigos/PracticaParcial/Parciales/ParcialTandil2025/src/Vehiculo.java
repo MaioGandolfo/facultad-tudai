@@ -27,6 +27,10 @@ public abstract class Vehiculo extends Transporte{
             caracteristicas.add(ss);
     }
 
+    public String toString(){
+        return "Patente: " + patente + ", Modelo: " + modelo + ", Kilometros: " + kilometros + ", Caracteristicas: (" + caracteristicas.toString() + " ), Costo de mantenimieto: " + this.getCostoMantenimiento() + " |";
+    }
+
     public boolean tieneCaracteristica(String ss){
         return caracteristicas.contains(ss);
     }

@@ -17,7 +17,7 @@ public class Taxi extends Vehiculo{
     @Override
     public double getCostoMantenimiento() {
         double salida = costoDiario * this.getKilometros();
-        if(this.getModelo() < modeloMinimo)
+        if(this.getModelo() <= modeloMinimo)
             return (salida + extra);
         else
             return salida;
