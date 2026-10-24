@@ -20,10 +20,6 @@ public class Flota extends Transporte{
         return salida;
     }
 
-
-
-
-
     @Override
     public int getModelo() {
         int minimo = Integer.MAX_VALUE;
