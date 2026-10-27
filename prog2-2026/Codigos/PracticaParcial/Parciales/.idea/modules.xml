@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ParcialLasflores2025/ParcialLasflores2025.iml" filepath="$PROJECT_DIR$/ParcialLasflores2025/ParcialLasflores2025.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParcialRauch2025/ParcialRauch2025.iml" filepath="$PROJECT_DIR$/ParcialRauch2025/ParcialRauch2025.iml" />
       <module fileurl="file://$PROJECT_DIR$/ParcialTandil2025/ParcialTandil2025.iml" filepath="$PROJECT_DIR$/ParcialTandil2025/ParcialTandil2025.iml" />
       <module fileurl="file://$PROJECT_DIR$/ParcialTresArroyos2024/ParcialTresArroyos2024.iml" filepath="$PROJECT_DIR$/ParcialTresArroyos2024/ParcialTresArroyos2024.iml" />
       <module fileurl="file://$PROJECT_DIR$/Parciales.iml" filepath="$PROJECT_DIR$/Parciales.iml" />

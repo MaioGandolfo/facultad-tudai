@@ -27,7 +27,6 @@ public class Contenedor extends ElementoEnvio {
 	    // el elemento en la posicion 0 .....
 		// dos lineas mas abajo dice elemento en la posicion 5
 		/**if (els.size()>posicion) {
-		 
 			return els.get(posicion).getCiudad();
 		}*/
 		//posicion es un atributo de la clase;

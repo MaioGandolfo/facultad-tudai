@@ -12,7 +12,25 @@ public class Figurita extends Coleccionable{
         this.precio = precio;
     }
 
+    public String getAlbum() {
+        return album;
+    }
 
+    public void setAlbum(String album) {
+        this.album = album;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
     @Override
     public double getPrecio() {
