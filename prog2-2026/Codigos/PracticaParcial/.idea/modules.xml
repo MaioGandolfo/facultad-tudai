@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Comparable/Comparable.iml" filepath="$PROJECT_DIR$/Comparable/Comparable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parciales/ParcialLasflores2025/ParcialLasflores2025.iml" filepath="$PROJECT_DIR$/Parciales/ParcialLasflores2025/ParcialLasflores2025.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parciales/ParcialRauch2025/ParcialRauch2025.iml" filepath="$PROJECT_DIR$/Parciales/ParcialRauch2025/ParcialRauch2025.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parciales/ParcialTandil2025/ParcialTandil2025.iml" filepath="$PROJECT_DIR$/Parciales/ParcialTandil2025/ParcialTandil2025.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parciales/ParcialTresArroyos2024/ParcialTresArroyos2024.iml" filepath="$PROJECT_DIR$/Parciales/ParcialTresArroyos2024/ParcialTresArroyos2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parciales/Parciales.iml" filepath="$PROJECT_DIR$/Parciales/Parciales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PracticaParcial.iml" filepath="$PROJECT_DIR$/.idea/PracticaParcial.iml" />
+    </modules>
+  </component>
+</project>

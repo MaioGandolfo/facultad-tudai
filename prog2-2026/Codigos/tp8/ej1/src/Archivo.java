@@ -1,4 +1,6 @@
-public class Archivo extends ElementoSA{
+import java.util.Comparator;
+
+public class Archivo extends ElementoSA implements Comparator<Archivo> {
     private String extension;
     private double tamanio;
 
@@ -25,5 +27,10 @@ public class Archivo extends ElementoSA{
     protected void imprimirArbol(String prefijo, boolean esUltimo) {
         String conector = esUltimo ? "└── " : "├── ";
         System.out.println(prefijo + conector + this);
+    }
+
+    @Override
+    public int compare(Archivo o1, Archivo o2) {
+        return 0;
     }
 }
