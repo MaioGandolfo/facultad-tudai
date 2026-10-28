@@ -1,7 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-
+/*
     //vehiculos
 
     Vehiculo taxi1 = new Taxi("AA 192 TT", 70000, 2019, 5, 2010, 2000, 500);
@@ -27,6 +27,6 @@ void main() {
     FlotaLimitada flotaLimitada1 = new FlotaLimitada(new CondicionModelo(2023));
     FlotaLimitada flotaLimitada2 = new FlotaLimitada(new CondicionCaracteristica("blanco"));
     //FlotaLimitada flotaLimitada3 =
-
+*/
 
 }
