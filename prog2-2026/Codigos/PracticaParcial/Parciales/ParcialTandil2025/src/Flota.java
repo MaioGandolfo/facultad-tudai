@@ -1,10 +1,14 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Flota extends Transporte{
     private ArrayList<Transporte> elementos;
+    private Comparator <Vehiculo> cp;
 
-    public Flota(){
+    public Flota( Comparator cc){
         this.elementos = new ArrayList<>();
+        this.cp = cp;
     }
 
     public void addElemento(Transporte tt){
@@ -17,6 +21,7 @@ public class Flota extends Transporte{
             ArrayList<Vehiculo> aux = tt.buscar(cc);
             salida.addAll(aux);
         }
+        Collections.sort(salida, cp);
         return salida;
     }
 

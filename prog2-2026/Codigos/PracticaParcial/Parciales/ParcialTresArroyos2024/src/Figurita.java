@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Figurita extends Coleccionable{
+public class Figurita extends Coleccionable implements Comparable<Figurita> {
     private String album;
     private int numero;
     private double precio;
@@ -43,5 +43,16 @@ public class Figurita extends Coleccionable{
         if(cc.cumple(this))
             salida.add(this);
         return salida;
+    }
+
+    //Los listados se ordenan siempre
+    //por el precio de la figurita y en caso de dos figuritas con el mismo precio, se ordenan alfabéticamente por su
+    //nombre.
+
+    public int compareTo(Figurita ff){
+        int aux = Double.compare(this.getPrecio(), ff.getPrecio());
+        if(aux == 0)
+            return this.getNombre().compareTo(ff.getNombre());
+        return aux;
     }
 }
