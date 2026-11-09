@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.ConcurrentModificationException;
 
-public abstract class Vehiculo extends Transporte{
+public abstract class Vehiculo extends Transporte implements Comparable<Vehiculo>{
     //patente, un modelo (año), los kilómetros recorridos y una determinada cantidad de asientos.
     private int kilometros, modelo, asientos;
     private String patente;
@@ -20,6 +20,10 @@ public abstract class Vehiculo extends Transporte{
         if(cc.cumple(this))
             salida.add(this);
         return salida;
+    }
+
+    public int compareTo(Vehiculo vv){
+        int salida =
     }
 
     public void addCaracteristica(String ss){

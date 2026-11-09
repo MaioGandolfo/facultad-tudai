@@ -21,4 +21,5 @@ public abstract class ObjAura {
     public abstract boolean tieneMoviemiento(String ss);
     public abstract ArrayList<Jugador>buscar(Condicion cc);
     public abstract int getXp();
+    public abstract int calcularAura();
 }

@@ -36,6 +36,25 @@ public class Equipo extends ObjAura{
 
     @Override
     public int getXp() {
+        int xp =0;
+        if(!elementos.isEmpty()){
+            for(ObjAura ee : elementos) {
+                xp = ee.getXp();
+                if (xp > 0)
+                    return xp;
+            }
+        }
+        return 0;
+    }
+
+    public int calcularAura(){
+        int aura = 0;
+        if(!elementos.isEmpty()){
+            for(ObjAura ee : elementos){
+                aura += ee.calcularAura();
+            }
+            return aura / elementos.size();
+        }
         return 0;
     }
 }

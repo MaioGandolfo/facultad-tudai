@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>prueba web1</title>
+        <title id="titulo">prueba web1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
@@ -32,6 +32,60 @@
         <button type="button" id="btn-prender">Prender</button>
         <button type="button" id="btn-apagar">Apagar</button>
 
+        
+        <h2>Cambio 1</h2>
+        
+        <h3>cambio 2</h3>
+        
+        <h4>Cambio 3</h4>
+
+        <button type="button" id="btn1">Botón 1</button>
+        <button type="button" id="btn2">Botón 2</button>
+        <button type="button" id="btn3">Botón 3</button>
+
+        <h4>Lista de tareas:</h4>
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombreFormulario" name="nombre" placeholder="ingrese su nombre" required>
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellidoFormulario" name="apellido" placeholder="Ingrese su apellido" required>
+            <br>
+
+            <button type="submit" id="btn-enviar">enviar</button>
+        </form>
+
+        <div class="info">
+            <p>
+                In aliqua labore voluptate pariatur irure eiusmod quis nostrud nisi commodo amet labore esse adipisicing. Nostrud irure incididunt tempor eu nisi veniam labore magna quis cupidatat. 
+                Excepteur id sunt minim reprehenderit non nostrud aute qui ipsum anim aliquip ea.
+                Consequat exercitation fugiat ea amet qui deserunt ea aliquip occaecat et labore.
+                Sint dolore proident culpa elit.
+            </p>
+        </div>
+
+        <button type="button" id="btn-ocultar">Ocultar</button>
+        
+        <form id="calculadora">
+            <input type="number" id="num1" name="num1" step="any" placeholder="valor 1" required>
+            
+            <label for="operacion">Operaciones</label>
+            <select id="operacion" name="operacion">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+            
+            <input type="number" id="num2" name="num2" step="any" placeholder="valor 2" required>
+
+            <button type="submit" id="btn-calculadora">=</button>
+
+            <p id="resultado"></p>
+        </form>
+        
+        
         <script type="text/javascript" src="js/prueba.js" async defer></script>
     </body>
 </html>

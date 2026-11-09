@@ -62,6 +62,10 @@ public class Jugador extends ObjAura implements Comparable<Jugador> {
         return salida;
     }
 
+    public int calcularAura(){
+        return ca.calcular(this);
+    }
+
     @Override
     public int compareTo(Jugador o) {
         return 0;
