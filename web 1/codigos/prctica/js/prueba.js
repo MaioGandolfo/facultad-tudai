@@ -133,6 +133,59 @@ function calcular(e){
     resultado.innerHTML = total;
 }
 
+// ej6 tp1
+
+let tareas =[];
+
+let formTareas = document.querySelector("#formTareas");
+let listaTareas = document.querySelector("listaTareas");
+
+let btnVaciar = document.getElementById("btnVaciar");
+
+formTareas.addEventListener("submit", agregarTarea);
+//btnVaciar.addEventListener("click", vaciarTareas);
+
+function agregarTarea(e){
+    e.preventDefault();
+
+    let formData = new FormData(formTareas);
+    let textoTarea = formData.get("tarea");
+
+    let nuevaTarea = {
+        decriocion: textoTarea, completada: false
+    };
+
+    tareas.push(nuevaTarea);
+
+    formTareas.reset();
+
+    mostrarTareas();
+}
+
+//uso fetch
+
+function loadClick(event){
+    event.preventDefault();
+    fetch("pruedaFetch.html5").then
+    (response => {
+        console.log(response);
+        console.log(response.status);
+        response.text().then(text => {
+            document.querySelector("#use-ajax").innerHTML = text
+        });
+    })
+    .catch(error => {
+        console.log(error)
+        container.innerHTML = "<h1> Error - Connection Failed!</h1>";
+    });
+    
+    
+}   
+
+let jsLoad= document.querySelectorAll(".js-load");
+jsLoad.forEach(e => e.addEventListener("click", loadClick)) 
+
+
 /*
 function actualizarSaludo(){
     let nodoInput = document.getElementById("txtInput");
